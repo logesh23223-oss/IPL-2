@@ -1,6 +1,10 @@
 # IPL-2
 # React + Vite
 
+GitHub Pages deploys automatically from the `main` branch through the workflow in `.github/workflows/deploy.yml`.
+# IPL-2
+# React + Vite
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
