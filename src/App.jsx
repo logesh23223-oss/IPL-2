@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -9,18 +9,19 @@ import BookingHistory from "./pages/BookingHistory";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Booking />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/matches" element={<Matches />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/history" element={<BookingHistory />} />
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
